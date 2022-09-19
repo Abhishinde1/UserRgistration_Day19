@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose option:\n1.Valid first name\n2.Valid last name");
+            Console.WriteLine("Choose option:\n1.Valid first name\n2.Valid last name\n3.Valid Email\n");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -14,6 +14,9 @@
                     break;
                 case 2:
                     UC2.ValidateLastName();
+                    break;
+                case 3:
+                    UC3.ValidateEmail();
                     break;
 
             }
