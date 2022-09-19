@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose option:\n1.Valid first name\n2.Valid last name\n3.Valid Email\n4.Valid Mobile number(+91 1234567890)\n5.Minimum 8 characters\n6.At least 1 upper case\n7.At least 1 numberic value");
+            Console.WriteLine("Choose option:\n1.Valid first name\n2.Valid last name\n3.Valid Email\n4.Valid Mobile number(+91 1234567890)\n5.Minimum 8 characters\n6.At least 1 upper case\n7.At least 1 numberic value\n8.At least 1 special character");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -35,6 +35,11 @@
                     Console.WriteLine("Enter a password : ");
                     string input3 = Console.ReadLine();
                     UC7.ValidatePassword(input3);
+                    break;
+                case 8:
+                    Console.WriteLine("Enter a password : ");
+                    string input4 = Console.ReadLine();
+                    UC8.ValidatePassword(input4);
                     break;
 
             }
